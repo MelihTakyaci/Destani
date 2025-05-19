@@ -1,7 +1,7 @@
 import React from 'react'
 import "./page.css"
 import Image from 'next/image'
-import { Hero1, InfoCards, Description, Header, SlideBar, Footer } from '@/components'
+import { InfoCards, Description, Header, SlideBar, Footer } from '@/components'
 import Contact from '@/components/Contact';
 import Hero from '@/components/Hero';
 

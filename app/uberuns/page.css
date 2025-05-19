@@ -1,14 +1,13 @@
 /* === General Container === */
 .container {
-  display: flex;
-  flex-direction: column;
+  display: block;
+  align-items: center;
   box-sizing: border-box;
   width: 100%;
   /* max-width: 1728px; */
   padding: clamp(1rem, 5vw, 6rem);
   padding-top: 0px;
   padding-bottom: 0px;
-  justify-content: center;
 }
 /* === End: General Container === */
 
@@ -48,6 +47,7 @@ p b {
 }
 
 /* === END of Hero  */
+
 
 
 /* === Info Cards Grid === */
@@ -119,6 +119,7 @@ p b {
 
 /* === Image 2 ===*/
 .Image2 {
+  display: block;
   width: 1500px;
   margin-top: 8rem;
   max-width: 100%;

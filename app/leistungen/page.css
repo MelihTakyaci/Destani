@@ -10,26 +10,14 @@
 }
 /* === End: General Container === */
 
-/* === Hero Section === */
-.heroContainer{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
+/* === Hero Heading === */
 .heroText {
   font-size: clamp(2rem, 5vw, 3.625rem);
   margin-bottom: 1rem;
   margin-top: 4rem;
   line-height: 1.2;
 }
-.heroContainer img{
-  object-fit: cover;
-  max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-}
+/* === End: Hero Heading === */
 
 /* === Emphasized text in <b> === */
 p b {
