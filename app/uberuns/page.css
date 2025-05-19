@@ -1,18 +1,38 @@
-
 /* === General Container === */
 .container {
-box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
   width: 100%;
-  max-width: 1728px;
+  /* max-width: 1728px; */
   padding: clamp(1rem, 5vw, 6rem);
+  padding-top: 0px;
+  padding-bottom: 0px;
+  justify-content: center;
+}
+/* === End: General Container === */
+
+/* === Hero Section=== */
+.heroContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-/* === Hero Heading === */
 .heroText {
   font-size: clamp(2rem, 5vw, 3.625rem);
   margin-bottom: 1rem;
+  margin-top: 4rem;
   line-height: 1.2;
 }
+.heroContainer img{
+  object-fit: cover;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* === End: Hero Heading === */
 
 /* === Emphasized text in <b> === */
 p b {
@@ -27,6 +47,9 @@ p b {
   height: 450px;
 }
 
+/* === END of Hero  */
+
+
 /* === Info Cards Grid === */
 .infoCards {
   display: grid;
@@ -38,13 +61,15 @@ p b {
   margin-left: auto;
   margin-right: auto;
 }
+/* === End: Info Cards Grid === */
 
-/* 2-column layout for tablets and above */
+/* === Info Cards Grid (Tablet Layout) === */
 @media (min-width: 700px) {
   .infoCards {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+/* === End: Info Cards Grid (Tablet Layout) === */
 
 /* === Individual Card === */
 .infoCards .cards {
@@ -59,6 +84,7 @@ p b {
   transform: translateY(-4px);
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
 }
+/* === End: Individual Card === */
 
 /* === Icon Style === */
 .icon {
@@ -66,75 +92,84 @@ p b {
   height: 64px;
   object-fit: contain;
 }
+/* === End: Icon Style === */
 
 /* === Card Title === */
 .title {
-  font-size: clamp(1.25rem, 2.5vw, 1.75rem); /* 20-28px */
+  font-size: clamp(1.25rem, 2.5vw, 1.75rem);
   margin: 1rem 0;
   font-weight: 600;
   color: #1a1a1a;
 }
+/* === End: Card Title === */
 
-/* === Highlighted word (optional for spans) */
+/* === Highlighted word === */
 .title .highlight {
   color: #2555a1;
 }
+/* === End: Highlighted word === */
 
 /* === Card Description === */
 .description {
-  font-size: clamp(0.9rem, 2vw, 1rem); /* 15-16px */
+  font-size: clamp(0.9rem, 2vw, 1rem);
   color: #444;
   line-height: 1.6;
 }
+/* === End: Card Description === */
 
 /* === Image 2 ===*/
 .Image2 {
   width: 1500px;
   margin-top: 8rem;
   max-width: 100%;
+  margin-right: auto;
+  margin-left: auto;
   height: 450px;
+  object-fit: cover;
 }
 @media (max-width: 768px) {
-    .Image2{
-        height: 100%;
-    }
+  .Image2 {
+    height: 100%;
+  }
 }
+/* === End: Image 2 === */
 
 /* === UberUnz Description === */
-.description{
-    margin-top: 4rem;
-    padding: 1rem;
+.description {
+  margin-top: 4rem;
+  padding: 1rem;
 }
-.descriptionText{
-    font-size: clamp(2rem, 5vw, 3.625rem);
+.descriptionText {
+  font-size: clamp(2rem, 5vw, 3.625rem);
 }
-
-.descriptionP{
-    margin-top: 2rem;
-    color: #525252;
-    font-size: clamp(1rem, 2.5vw, 1.75rem);
-    line-height: 50px;
+.descriptionP {
+  margin-top: 2rem;
+  color: #525252;
+  font-size: clamp(1rem, 2.5vw, 1.75rem);
+  line-height: 50px;
 }
 @media (max-width: 768px) {
-    .descriptionP{
-        line-height: 30px;
-    }
+  .descriptionP {
+    line-height: 30px;
+  }
+}
+/* === End: UberUnz Description === */
+
+/* === Contact Us Section === */
+.contact {
+  margin-top: 8rem;
+  margin-left: 0;
+  margin-right: 0;
+}
+.contact .title {
+  font-size: clamp(2rem, 5vw, 3.625rem);
+}
+.contact .contactText {
+  color: #525252;
+  font-size: 20px;
 }
 
-/* === Contact Us Section */
-.contact{
-    margin-top: 8rem;
-}
-.contact .title{
-    font-size: clamp(2rem, 5vw, 3.625rem);
-}
-
-.contact .contactText{
-    color: #525252;
-    font-size: 20px;
-}
-
-/* === Contact Container */
+/* === Contact Container === */
 .contactContainer {
   display: flex;
   flex-wrap: wrap;
@@ -150,13 +185,13 @@ p b {
   flex: 1;
   min-width: 300px;
 }
-
 .contactImage img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
 }
+/* === End: Left Image === */
 
 /* === Right Form === */
 .contact-form {
@@ -221,8 +256,9 @@ p b {
 .contact-form button:hover {
   background-color: #f0f0f0;
 }
+/* === End: Right Form === */
 
-/* === Responsive === */
+/* === Responsive (Contact) === */
 @media (max-width: 768px) {
   .contactContainer {
     flex-direction: column;
@@ -236,3 +272,5 @@ p b {
     max-width: 100%;
   }
 }
+/* === End: Responsive (Contact) === */
+/* === End Contact Section */

@@ -1,0 +1,247 @@
+/* [project]/app/uberuns/page.css [app-client] (css) */
+.container {
+  box-sizing: border-box;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  padding: 0 clamp(1rem, 5vw, 6rem);
+  display: flex;
+}
+
+.heroContainer {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.heroText {
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+  font-size: clamp(2rem, 5vw, 3.625rem);
+  line-height: 1.2;
+}
+
+.heroContainer img {
+  object-fit: cover;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+p b {
+  color: #2555a1;
+}
+
+.heroImage {
+  width: 1500px;
+  max-width: 100%;
+  height: 450px;
+  margin-top: 3rem;
+}
+
+.infoCards {
+  grid-template-columns: 1fr;
+  gap: 4rem;
+  max-width: 1200px;
+  margin-top: 8rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1rem;
+  display: grid;
+}
+
+@media (width >= 700px) {
+  .infoCards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.infoCards .cards {
+  background: #fff;
+  border-radius: 12px;
+  padding: 2rem;
+  transition: transform .3s, box-shadow .3s;
+  box-shadow: 0 8px 20px #0000000d;
+}
+
+.infoCards .cards:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px #00000014;
+}
+
+.icon {
+  object-fit: contain;
+  width: 64px;
+  height: 64px;
+}
+
+.title {
+  color: #1a1a1a;
+  margin: 1rem 0;
+  font-size: clamp(1.25rem, 2.5vw, 1.75rem);
+  font-weight: 600;
+}
+
+.title .highlight {
+  color: #2555a1;
+}
+
+.description {
+  color: #444;
+  font-size: clamp(.9rem, 2vw, 1rem);
+  line-height: 1.6;
+}
+
+.Image2 {
+  object-fit: cover;
+  width: 1500px;
+  max-width: 100%;
+  height: 450px;
+  margin-top: 8rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (width <= 768px) {
+  .Image2 {
+    height: 100%;
+  }
+}
+
+.description {
+  margin-top: 4rem;
+  padding: 1rem;
+}
+
+.descriptionText {
+  font-size: clamp(2rem, 5vw, 3.625rem);
+}
+
+.descriptionP {
+  color: #525252;
+  margin-top: 2rem;
+  font-size: clamp(1rem, 2.5vw, 1.75rem);
+  line-height: 50px;
+}
+
+@media (width <= 768px) {
+  .descriptionP {
+    line-height: 30px;
+  }
+}
+
+.contact {
+  margin-top: 8rem;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.contact .title {
+  font-size: clamp(2rem, 5vw, 3.625rem);
+}
+
+.contact .contactText {
+  color: #525252;
+  font-size: 20px;
+}
+
+.contactContainer {
+  border-radius: 24px;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 4rem auto;
+  display: flex;
+  overflow: hidden;
+  box-shadow: 0 8px 24px #00000014;
+}
+
+.contactImage {
+  flex: 1;
+  min-width: 300px;
+}
+
+.contactImage img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.contact-form {
+  color: #fff;
+  background-color: #2953a4;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  display: flex;
+}
+
+.contact-form form {
+  flex-direction: column;
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+}
+
+.contact-form p {
+  margin-bottom: .66rem;
+  margin-left: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.contact-form input, .contact-form textarea {
+  color: #fff;
+  background-color: #0000;
+  border: 1px solid #fff;
+  border-radius: 100px;
+  outline: none;
+  margin-bottom: 1.5rem;
+  padding: 1rem 1.25rem;
+  font-size: 1rem;
+}
+
+.contact-form textarea {
+  resize: none;
+  height: 52px;
+}
+
+.contact-form input::placeholder, .contact-form textarea::placeholder {
+  color: #fff9;
+}
+
+.contact-form button {
+  color: #2953a4;
+  cursor: pointer;
+  background-color: #fff;
+  border: none;
+  border-radius: 100px;
+  margin-top: 1rem;
+  padding: 1.2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background .3s;
+}
+
+.contact-form button:hover {
+  background-color: #f0f0f0;
+}
+
+@media (width <= 768px) {
+  .contactContainer {
+    flex-direction: column;
+  }
+
+  .contact-form {
+    padding: 2rem 1.5rem;
+  }
+
+  .contact-form form {
+    max-width: 100%;
+  }
+}
+
+
+/*# sourceMappingURL=app_uberuns_page_85c63463.css.map*/
